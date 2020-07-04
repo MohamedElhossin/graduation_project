@@ -67,8 +67,7 @@ model = MaxPooling2D(pool_size=(2, 2), name='block3_poool')(model)
 #Fully connect & output
 model = Flatten()(model)
 model = Dense(128, activation='relu', name='fc1')(model)
-model = Dense(256, activation='relu', name='fc2')(model)
-model = Dense(512, activation='relu', name='fc4')(model)
+model = Dense(4028, activation='relu', name='fc2')(model)
 model = Dropout(0.5)(model)
 model = Dense(3, activation='softmax', name='fc3',
 kernel_initializer=glorot_uniform(seed=0))(model)
