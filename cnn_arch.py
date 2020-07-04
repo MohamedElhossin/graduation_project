@@ -54,7 +54,7 @@ model = Conv2D(filters=64, kernel_size=(3, 3), name='block2_conv2')(model)
 model = Activation('relu')(model)
 model = MaxPooling2D(pool_size=(2, 2), name='block2_poool')(model)
 #Box (3)
-"""
+
 model = Conv2D(filters=128, kernel_size=(3, 3), name='block3_conv1')(model)
 model = Activation('relu')(model)
 model = Conv2D(filters=128, kernel_size=(3, 3), name='block3_conv2')(model)
@@ -62,7 +62,7 @@ model = Activation('relu')(model)
 model = Conv2D(filters=128, kernel_size=(3, 3), name='block3_conv3')(model)
 model = Activation('relu')(model)
 model = MaxPooling2D(pool_size=(2, 2), name='block3_poool')(model)
-"""
+
 
 #Fully connect & output
 model = Flatten()(model)
